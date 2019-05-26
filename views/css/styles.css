@@ -1,0 +1,368 @@
+/*GENERAL CSS*/
+body {
+    margin: 0;
+    font-size: 1rem;
+    font-family: 'Arial', serif;
+    font-weight: 400;
+    line-height: 1.5;
+    min-height: 100vh;
+    text-align: left;
+    padding: 5%;
+    background-image: url('../images/background/yellow.png');
+    /*background-attachment: fixed;*/
+    background-position: center;
+    background-repeat: no-repeat;
+    /*background-size: cover;*/
+    height: 100vh;
+    background-attachment: fixed;
+    background-size: contain;
+}
+
+.jumbotron {
+    background-color: transparent !important;
+}
+nav {
+    background-color: white;
+}
+.main-content {
+    padding: 0;
+    margin: 2% auto;
+    width: 80%;
+    flex: 1;
+}
+
+#upper_right{
+    position: absolute;
+    top:2%;
+    right:2%;
+}
+
+.jumbotron.jumbotron-nav {
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    width: 80%;
+}
+
+.jumbotron > img {
+    padding: 2%;
+}
+
+nav {
+    border-top: 1px solid darkgrey;
+    border-bottom: 1px solid darkgrey;
+    margin: 0;
+    text-align: center;
+}
+
+/*#00868B*/
+.nav-link {
+    color: darkgrey;
+}
+
+.nav-link.active,
+.nav-link:hover {
+    color: #00868B !important;
+}
+
+ul.navbar-nav {
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+button,
+.btn-custom {
+    background-color: #00868B;
+    color: white;
+    border: #00868B;
+}
+
+.btn-custom:hover {
+    background-color: white;
+    color: #00868B;
+    border: 1px solid #00868B;
+}
+
+.button-center {
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.home-page-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 1rem;
+}
+
+.social-media-buttons a.social-media {
+    text-decoration: none;
+    color: darkgray;
+}
+
+.social-media-buttons a.social-media:hover {
+    color: #00868B;
+}
+
+.item {
+    grid-column: span 1;
+}
+
+#meet-the-team-carousel {
+    padding: 2rem;
+    /*background: #00868B;*/
+}
+
+.carousel-inner {
+    display: flex;
+    align-items: center;
+}
+
+.wrapper-team {
+    margin: 0 auto;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper-team-description {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+}
+
+blockquote.author-bio:before {
+    color: #ccc;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+}
+
+blockquote.author-bio {
+    background: none;
+    border: none;
+    padding: 0;
+    font-size: 1em;
+    width: 100%;
+}
+
+
+.carousel.slide {
+    margin-top: 1rem;
+}
+
+.card-team {
+    margin-top: 2rem;
+}
+
+.card-body {
+    max-height:300px;
+    overflow-y: auto;    
+}
+
+.form-container {
+    padding: 20px;
+}
+
+#footer {
+    bottom: 0;
+    display: flex;
+    margin-top: 2rem;
+    align-items: center;
+    width: 100%;
+    height: 2.5rem;
+    /*background-color: #00868B;*/
+}
+
+.footer-container {
+    text-align: center;
+}
+
+
+.registerForm input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+
+/* Style the submit button */
+.registerForm input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Style the container for inputs */
+.registerForm .container {
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+/* The message box is shown when the user clicks on the password field */
+.registerForm #message {
+    display: none;
+    background: #f1f1f1;
+    color: #000;
+    position: relative;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.registerForm #message p {
+    padding: 10px 35px;
+    font-size: 18px;
+}
+
+/* Add a green text color and a checkmark when the requirements are right */
+.registerForm .valid {
+    color: green;
+}
+
+.registerForm .valid:before {
+    position: relative;
+    left: -35px;
+    content: "✔";
+}
+
+/* Add a red text color and an "x" when the requirements are wrong */
+.registerForm .invalid {
+    color: red;
+}
+
+.registerForm .invalid:before {
+    position: relative;
+    left: -35px;
+    content: "✖";
+}
+
+.response {
+    padding: 6px;
+    display: none;
+}
+
+.not-exists {
+    color: green;
+}
+
+.exists {
+    color: red;
+}
+
+.card-post {
+    width: 60%;
+    margin: 1rem auto;
+
+}
+
+/* Header/Blog Title */
+.dashboardheader {
+    padding: 30px;
+    font-size: 1rem;
+    text-align: center;
+    border: 1px solid #00868B;
+    border-radius: 5px;
+    background:white;
+}
+
+/* Clear floats after the columns */
+.dashboardrow:after {
+    content: "";
+    display: table;
+    clear: both;
+
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.dashboardleftcolumn {
+    float: left;
+    width: 65%;
+    height: 100vh;
+    border: 1px solid #00868B;
+    border-radius: 5px;
+    margin-top: 2%;
+    max-height: 860px;
+    overflow-y: auto;
+    background:white;
+}
+
+/* Right column */
+.dashboardrightcolumn {
+    float: left;
+    width: 30%;
+    margin-left: 5%;
+    border: 1px solid #00868B;
+    border-radius: 5px;
+    margin-top: 2%;
+}
+
+/* Fake image */
+.dashboardfakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Add a card effect for articles */
+.dashboardcard {
+    background-color: white;
+    padding: 20px;
+}
+
+h2.gray {
+    color: #00868B;
+}
+
+.posts-dashboard {
+    max-height: 150px;
+    overflow-y: scroll;
+}
+
+/* Footer */
+.dashboardfooter {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .dashboardleftcolumn, .dashboardrightcolumn {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+/* Collapsible button for viewing your own posts on dashboard */
+.list-group-item .btn-info {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/* Icon when the collapsible content is shown */
+.list-group-item .btn-info:after {
+    content: "-";
+}
+
+/* Icon when the collapsible content is hidden */
+.list-group-item .btn-info.collapsed:after {
+    content: "+";
+}
+
+.gallery-cards.card-deck {
+    width: 33%;
+    display: inline-block;
+}
